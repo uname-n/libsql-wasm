@@ -19,4 +19,6 @@ RUN ./configure --enable-wasm-runtime
 RUN make -j8 sqlite3
 ENV LD_LIBRARY_PATH=".libs ./sqlite3"
 
+RUN make
+
 CMD ["./libsql"]
