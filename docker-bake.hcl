@@ -1,5 +1,5 @@
 target "default" {
-    tags = [ "libsql-wasm" ]
+    tags = [ "polymerized/libsql-wasm:latest" ]
     dockerfile = "dockerfile"
     platforms = [ "linux/amd64" ]
     args = {
